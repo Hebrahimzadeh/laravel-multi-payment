@@ -17,7 +17,7 @@ jobs:
           php-version: "8.1"
 
       - name: Cache dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ~/.composer/cache/files
           key: dependencies-stable-laravel-10.x-php-8.1-composer-${{ hashFiles('composer.json') }}
